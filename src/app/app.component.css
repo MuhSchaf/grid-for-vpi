@@ -1,0 +1,39 @@
+.grid-container {
+  width: 100%;
+  background-color: papayawhip;
+  display: grid;
+  grid-template-columns: 48px fit-content(33%) auto;
+  row-gap: 2em;
+  column-gap: 1em;
+}
+
+.image-icon {
+  grid-row: 1;
+  grid-column: 1 / 2;
+  background-color: aqua;
+}
+
+.vpi-text {
+  grid-row: 1;
+  grid-column: 2 / 3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.control {
+  grid-row: 1;
+  grid-column: 3 / 4;
+  background-color: red;
+}
+
+.comment-parent {
+  display: grid;
+  grid-template-columns: 48px auto;
+}
+
+.comment {
+  display: flex;
+  grid-row: 1;
+  grid-column: 2 / 3;
+}
